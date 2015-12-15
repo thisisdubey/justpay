@@ -4,7 +4,7 @@ var expect = require("chai").expect;
 var gatewayTestData = require('../helpers/gateway-test-data');
 var gatewayLib = require('../lib/index');
 
-// test for abstract response only
+// test for abstract response, similar to application
 var ifAbstractResponse = true;
 
 // test for gateway library functionality
