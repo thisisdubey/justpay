@@ -7,6 +7,12 @@ var paypalJson = function(price, currency, cardNumber, expDate, cvv, cardType, f
   var year = parseInt(sections[0], 10);
   var month = parseInt(sections[1], 10);
   // create paypal gateway input data
+  /* NOTE- currently paypal does not seem to accept payment data
+  * wihtout billing address, paypal technical support team still has
+  * to response on this issue, meantime for this demo app
+  * the billing address property is hard coded for each payment request
+  * made to paypal and can be same for each request.
+  */
   var create_payment_json = {
     "intent": "sale",
     "payer": {

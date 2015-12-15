@@ -1,0 +1,32 @@
+#This is for reference: how tables are created in mysql just-pay database
+
+CREATE DATABASE just_pay_demo;
+
+USE just_pay_demo;
+
+CREATE TABLE payment_order (
+order_id int NOT NULL AUTO_INCREMENT,
+payment_method varchar(20),
+first_name varchar(100),
+last_name varchar(100),
+amount_total varchar(10),
+currency varchar(10),
+gateway varchar(20),
+PRIMARY KEY (order_id) 
+);
+
+
+CREATE TABLE payment_response (
+response_id int NOT NULL AUTO_INCREMENT,
+transaction_id varchar(40),
+status varchar(100),
+type varchar(20),
+create_time varchar(20),
+update_time varchar(20),
+order_id int NOT NULL,
+PRIMARY KEY (response_id),
+FOREIGN KEY (order_id) 
+REFERENCES payment_order(order_id)
+ON UPDATE CASCADE
+ON DELETE CASCADE
+);
