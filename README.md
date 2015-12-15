@@ -20,6 +20,16 @@
       }
     });
  ```
+  Application is developed using Express 4, Nodejs, mysql, and Handlebars.js
+  
+  Tests are written using Mocha and Chai library.
+  
+  db folder contains required database for setup.
+  
+  Please go through config folder for all related config setup.
+  
+  ref folder has informative notes related to testing and database info.
+  
   To run the application:
    first install the dependency using
   ```
@@ -39,5 +49,3 @@
    ```
    npm test
    ```
-   test is written using mocha and chai
-      
