@@ -1,0 +1,53 @@
+<form id="payment" action="/payment" method="post">
+  <h1 class="title">{{title}}</h1>
+  <section>
+    <legend>Order</legend>
+    <ol>
+      <li>
+        <label for="name">Price</label>
+        <input id="name" name="price" type="text" pattern="^((\d{1,3}(,\d{3})+)|(\d{1,3}))(\.(\d{2})?)$" 
+        placeholder="00.00" required autofocus>
+      </li>
+      <li>
+        <label for="name">Currency</label>
+        <select name="currency" id="currency">
+          <option value="aud">AUD</option>
+          <option value="eur">EUR</option>
+          <option value="hkd">HKD</option>
+          <option value="sgd">SGD</option>
+          <option value="thb">THB</option>
+          <option value="usd" selected>USD</option>
+        </select>
+      </li>
+      <li>
+        <label for="name">Full Name</label>
+        <input id="name" name="fullName" type="text" placeholder="your name" 
+        pattern="^[A-Za-z\s]{1,}[\.]{0,1}[A-Za-z\s]{0,}$" required autofocus>
+      </li>
+    </ol>
+  </section>
+  <section>
+    <legend>Payment</legend>
+    <ol>
+      <li>
+        <label for="namecard">Name on card</label>
+        <input id="nameCard" name="nameCard" type="text" placeholder="Exact name as on the card" 
+        pattern="^[A-Za-z\s]{1,}[\.]{0,1}[A-Za-z\s]{0,}$" required>
+      </li>
+      <li>
+        <label for="cardnumber">Card number</label>
+        <input id="cardNumber" name="cardNumber" type="text" pattern="[0-9]{13,16}" required>
+      </li>
+      <li>
+        <label for="expDate">Expiration date</label>
+        <input id="expDate" name="expDate" type="month" placeholder="yyyy-mm" min="2016-01" max="2025-12"
+        pattern="^(19|20)\d\d[-](0[1-9]|1[012])$" required>
+      </li>
+      <li>
+        <label for="secure">CVV</label>
+        <input id="secure" name="secure" type="text" pattern="[0-9]{3,4}" required>
+      </li>
+    </ol>
+    <button type="submit">Submit</button>
+  </section>
+</form>

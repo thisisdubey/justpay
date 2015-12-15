@@ -1,0 +1,146 @@
+body, h1, form, fieldset, legend, ol, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fff;
+    color: #111;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 15px;
+}
+
+h1.title {
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 1px 1px #E3E4DD;
+}
+
+form#payment {
+    background: #BBD6EA;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 20px;
+    width: 400px;
+    margin: 10px auto 20px auto;
+}
+
+form#payment fieldset {
+    border: none;
+    margin-bottom: 10px;
+}
+
+form#payment fieldset:last-of-type {
+    margin-bottom: 0;
+}
+
+form#payment legend {
+    color: #101010;
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 0 1px 1px #DFE0DA;
+    padding: 10px 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+form#payment ol li {
+    background: #FFC04C;
+    background: rgba(255,255,255, .3);
+    border: 2px solid #996D3E;
+    border: 2px solid rgba(142,137,133,0.7);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    list-style: none;
+    line-height: 30px;
+    padding: 5px 10px;
+    margin-bottom: 4px;
+}
+
+form#payment fieldset.cards li:nth-child(1),
+form#payment fieldset.cards li:nth-child(2),
+form#payment fieldset.cards li:nth-child(3) {
+    border: none;
+    background: none;
+    padding: 0 5px 0 10px;
+    margin-right: 5px;
+    margin-top: 5px;
+    float: left;
+    line-height: 20px;
+}
+
+form#payment fieldset.cards li label {
+    width: auto;
+}
+
+form#payment label {
+    float: left;
+    clear: both;
+    font-size: 13px;
+    width: 110px;
+}
+
+form#payment fieldset.cards li:nth-child(4) label,
+form#payment fieldset.cards li:nth-child(5) label,
+form#payment fieldset.cards li:nth-child(6) label,
+form#payment fieldset.cards li:nth-child(7) label {
+    width: 110px;
+}
+
+form#payment label:hover {
+    cursor: pointer;
+}
+
+form#payment input:not([type="radio"]),
+form#payment textarea {
+    background: #ffffff;
+    border: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-style: italic;
+    outline: none;
+    padding: 5px;
+    width: 200px;
+}
+
+form#payment input:not([type="submit"]):focus,
+form#payment textarea:focus {
+    background: #eaeaea;
+}
+
+form#payment input[type="radio"] {
+    margin-top: 3px;
+}
+
+form#payment button {
+    display: block;
+    color: white;
+    background-color: rgba(0,0,0, 0.6);
+    margin: 10px auto 0 auto;
+    padding: 7px 20px;
+    text-transform: uppercase;
+    text-shadow: 0 1px 1px #000000;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+form#payment button:hover {
+    background-color: rgba(0,0,0, 0.8);
+    cursor: pointer;
+}
+
+footer {
+    margin: 0 auto;
+    border-top: 2px solid #e3ebc3;
+}
+
+footer p {
+    text-align:center;
+}

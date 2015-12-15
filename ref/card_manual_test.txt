@@ -1,0 +1,19 @@
+
+For paypal: 
+
+  (all may not work from below url, since paypal blocks some card numbers based on their no of uses)
+
+  https://www.paypalobjects.com/en_US/vhelp/paypalmanager_help/credit_card_numbers.htm
+
+  alternatively, try getting credit card no from following url and input any valid expiry and cvv data
+  (also suggested by paypal technical support)
+  http://www.fakenamegenerator.com/
+
+------------------------------------------------------------------------
+
+For braintree: 
+
+  https://developers.braintreepayments.com/reference/general/testing/php#credit-card-numbers
+
+  some of the master and visa card from this might work too- 
+  https://www.paypalobjects.com/en_US/vhelp/paypalmanager_help/credit_card_numbers.htm

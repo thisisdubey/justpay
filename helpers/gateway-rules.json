@@ -1,0 +1,33 @@
+{
+  "card": {
+    "type": [
+    {
+      "name": "amex",
+      "currency": "USD"
+    }
+    ]
+  },
+  "currency": {
+    "type": [
+    {
+      "name": "USD",
+      "gateway": "paypal"
+    }, {
+      "name": "EUR",
+      "gateway": "paypal"
+    }, {
+      "name": "AUD",
+      "gateway": "paypal"
+    }, {
+      "name": "THB",
+      "gateway": "braintree"
+    }, {
+      "name": "HKD",
+      "gateway": "braintree"
+    }, {
+      "name": "SGD",
+      "gateway": "braintree"
+    }
+    ]
+  }
+}
